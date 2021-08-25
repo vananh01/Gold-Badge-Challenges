@@ -6,8 +6,49 @@ using System.Threading.Tasks;
 
 namespace Cafe
 {
-    class MenuRepository
+    public class MenuRepository
     {
+        private List<Menu> _menuDirectory = new List<Menu>();
+        
+        //create
+
+        public bool AddMenuItem(Menu item)
+        {
+            int initial = _menuDirectory.Count;
+
+            _menuDirectory.Add(item);
+
+            bool added = _menuDirectory.Count > initial;
+            return added;
+             
+        }
+
+        // read
+        public List<Menu> getMenu()
+        {
+            return _menuDirectory;
+        }
+
+        public Menu GetMenuByItem(int mealId)
+        {
+            foreach(Menu item in _menuDirectory)
+            {
+                if (item.MealNumber == mealId)
+                {
+                    return item;
+                }
+            }
+            return null;
+
+        }
+
+        // We don't need to be able to update items right now.
+
+        // delete
+        public bool DeleteItem(int itemToDelete)
+        {
+            return _menuDirectory.Remove(GetMenuByItem(itemToDelete));
+        }
 
     }
 }
