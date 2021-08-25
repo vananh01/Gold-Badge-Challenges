@@ -24,7 +24,7 @@ namespace Cafe
         }
 
         // read
-        public List<Menu> getMenu()
+        public List<Menu> GetMenu()
         {
             return _menuDirectory;
         }

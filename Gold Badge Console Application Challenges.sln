@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe", "Cafe\Cafe.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe-Unittest", "UnitTestProject1\Cafe-Unittest.csproj", "{A9B1CD09-485B-4069-85F4-4DB1AFA536B5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CafeProgram", "CafeProgram", "{B087167F-F6C3-4891-949C-5DEA42737243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A197751-6E53-4DCA-A42E-79086D230A9A} = {B087167F-F6C3-4891-949C-5DEA42737243}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D67CDE7-B7B7-4723-8A28-9637C1891051}
