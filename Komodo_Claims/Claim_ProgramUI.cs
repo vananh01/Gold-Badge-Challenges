@@ -106,7 +106,7 @@ namespace Komodo_Claims
 
         private void EnterNewClaim()
         {
-            // try to figure out how to add new claim 
+            // need to try to figure how to put enum in 
             Console.Clear();
             Console.WriteLine("Enter the claim id: ");
             int claimId = Convert.ToInt32(Console.ReadLine());

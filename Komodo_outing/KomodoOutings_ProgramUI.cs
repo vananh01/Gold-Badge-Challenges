@@ -61,7 +61,7 @@ namespace Komodo_outing
                     $"Number of people that attended: {item.NumOfPeople}\n" +
                     $"Date: {item.Date} \n" +
                     $"Total cost per person for the event: {item.CostPerPerson}\n" +
-                    $"Total cost for the event: {item.TotalCost}")
+                    $"Total cost for the event: {item.TotalCost}");
             }
             Console.WriteLine("Press any key to continue");
             Console.ReadLine();
@@ -70,11 +70,35 @@ namespace Komodo_outing
 
         private void AddOutingsToList()
         {
+            // need to try to figure how to put enum in 
+            Console.Clear();
+            Console.WriteLine("Event Type: ");
+            string eventType = Console.ReadLine();
+  
+            Console.WriteLine("Number of people that attended:");
+            string numOfPeople = Console.ReadLine();
 
+            Console.WriteLine("Date:");
+            string date = Console.ReadLine();
+
+            Console.WriteLine("Total cost per person for the event:");
+            string costPerPerson = Console.ReadLine();
+
+            Console.WriteLine("Total cost for the event:");
+            string totalCost = Console.ReadLine();
+
+
+
+            Komodo_outings newListAdd = new Komodo_outings(eventType, Convert.ToInt32(numOfPeople), Convert.ToDateTime(date), Convert.ToDouble(costPerPerson), Convert.ToDouble(totalCost));
+            _repo.AddOutingToList(newListAdd);
+            Choose();
         }
 
         private void Calculation()
         {
+
+
+            Console.Clear();
 
         }
     }
