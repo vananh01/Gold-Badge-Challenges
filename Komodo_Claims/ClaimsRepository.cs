@@ -45,5 +45,11 @@ namespace Komodo_Claims
             return _claimsRepository.Peek();
         }
 
+
+        public void DealWithClaim()
+        {
+            _claimsRepository.Dequeue();
+        }
+
     }
 }
