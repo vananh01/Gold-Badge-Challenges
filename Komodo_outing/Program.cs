@@ -10,6 +10,8 @@ namespace Komodo_outing
     {
         static void Main(string[] args)
         {
+            ProgramUI ui = new ProgramUI();
+            ui.Run();
         }
     }
 }

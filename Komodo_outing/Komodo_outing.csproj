@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KomodOuting_Repository.cs" />
+    <Compile Include="KomodoOutings_ProgramUI.cs" />
     <Compile Include="Komodo_outings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
