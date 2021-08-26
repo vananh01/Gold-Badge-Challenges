@@ -87,7 +87,7 @@ namespace Komodo_Claims
             string answer = Console.ReadLine();
             if (answer =="yes" || answer == "y")
             {
-                
+                _repo.DealWithClaim();
             }
             else
             {
@@ -102,7 +102,12 @@ namespace Komodo_Claims
         }
         private void EnterNewClaim()
         {
+            Console.Clear();
+            Console.WriteLine("Enter the claim id: ");
+            string idinput = Console.ReadLine();
+            int claimId = Int32.Parse(idinput);
 
+           
         }
 
 
