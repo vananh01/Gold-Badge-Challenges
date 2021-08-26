@@ -27,6 +27,7 @@ namespace Komodo_Claims
             _repo.AddNewClaim(claim3);
         }
 
+
         private bool Menu()
         {
             Console.WriteLine("What would you like to do \n" +
@@ -59,6 +60,8 @@ namespace Komodo_Claims
             return true;
    
         }
+
+
         private void SeeAllClaims()
         {
             Console.Clear();
@@ -71,6 +74,9 @@ namespace Komodo_Claims
             Console.ReadLine();
             Menu();
         }
+
+
+
         private void TakeCareOfNextClaim()
         {
             Console.Clear();
@@ -95,13 +101,12 @@ namespace Komodo_Claims
                 Console.ReadKey();
                 Menu();
             }
-
-
-
-
         }
+
+
         private void EnterNewClaim()
         {
+            // try to figure out how to add new claim 
             Console.Clear();
             Console.WriteLine("Enter the claim id: ");
             int claimId = Convert.ToInt32(Console.ReadLine());
@@ -137,7 +142,7 @@ namespace Komodo_Claims
                     claim = ClaimTypes.Car;
                 }
                 Claims claims = new Claims(claimId, claimType, description, claimAmount, dateOfIncident, dateOfClaim);
-               // try to figure out how to add new claim
+               
             }
             catch
             {

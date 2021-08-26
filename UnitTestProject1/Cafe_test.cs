@@ -6,7 +6,7 @@ using System;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class Cafe_test
     {
         private MenuRepository _repo;
         private Menu _meal;

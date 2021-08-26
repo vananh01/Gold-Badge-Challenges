@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A4F27C9A-1AC9-49F3-8B52-A6CF0AB7E6E4}</ProjectGuid>
+    <ProjectGuid>{3C0E1FFE-0A91-4D0D-940A-BF538E5A4251}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CLaim_Test</RootNamespace>
-    <AssemblyName>CLaim_Test</AssemblyName>
+    <RootNamespace>Komodo_Outing_Test</RootNamespace>
+    <AssemblyName>Komodo_Outing_Test</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Claims_test.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

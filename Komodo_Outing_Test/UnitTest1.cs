@@ -1,10 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace CLaim_Test
+namespace Komodo_Outing_Test
 {
     [TestClass]
-    public class Claims_test
+    public class UnitTest1
     {
         [TestMethod]
         public void TestMethod1()
