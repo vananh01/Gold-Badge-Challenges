@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1D96B131-014F-4D56-A996-E116BA761DFB}</ProjectGuid>
+    <ProjectGuid>{0B36E2F9-F642-425F-8FF2-C247338EDCC7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>KomodoOuting</RootNamespace>
-    <AssemblyName>KomodoOuting</AssemblyName>
+    <RootNamespace>Komodo_outing</RootNamespace>
+    <AssemblyName>Komodo_outing</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KomodoOuting_Repository.cs" />
-    <Compile Include="KomodoOuting.cs" />
-    <Compile Include="Outing_programUI.cs" />
+    <Compile Include="Komodo_outings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

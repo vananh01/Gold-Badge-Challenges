@@ -1,6 +1,8 @@
 ﻿using Cafe;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 
 namespace UnitTestProject1
@@ -21,14 +23,28 @@ namespace UnitTestProject1
 
 
         [TestMethod]
-        public void AddContent()
+        public void Addcontent()
         {
-            MenuRepository repo = new MenuRepository();
-            Menu meal = new Menu();
-            meal.MealName = "Icecream";
-            bool addItem = repo.AddMenuItem(meal);
-            Assert.IsTrue(addItem);
+
+            Menu newMeal = new Menu(10, "www", "description", "food, food", 10d);
+            Assert.IsFalse(_repo.IfItemInMenu(10));
+            _repo.AddMenuItem(newMeal);
+            Assert.IsTrue(_repo.IfItemInMenu(10));
+        }
+
+
+        [TestMethod]
+        public void RemoveItem()
+        {
+            Menu newMeal = new Menu(10, "www", "description", "food, food", 10d);
+            _repo.AddMenuItem(newMeal);
+            Assert.AreEqual(true, _repo.IfItemInMenu(10));
+            _repo.DeleteItem(10);
+            Assert.AreEqual(false, _repo.IfItemInMenu(10));
 
         }
+
+
+
     }
 }

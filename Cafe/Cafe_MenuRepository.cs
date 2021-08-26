@@ -41,6 +41,17 @@ namespace Cafe
             return null;
 
         }
+        public bool IfItemInMenu(int mealId)
+        {
+            foreach (Menu item in _menuDirectory)
+            {
+                if (item.MealNumber == mealId)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         // We don't need to be able to update items right now.
 

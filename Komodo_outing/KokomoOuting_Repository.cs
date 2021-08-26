@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KomodoOuting
+namespace Komodo_outing
 {
-    class KomonoOuting
+    class KokomoOuting_Repository
     {
     }
 }
