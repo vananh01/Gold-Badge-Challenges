@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komodo_Claims", "Komodo_Cla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komodo_CLaim_Test", "CLaim_Test\Komodo_CLaim_Test.csproj", "{A4F27C9A-1AC9-49F3-8B52-A6CF0AB7E6E4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Komodo Outings", "Komodo Outings", "{CBF8366E-7D0B-4C59-AF96-2DA44BCDB456}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Komodo_Outings", "Komodo_Outings", "{CBF8366E-7D0B-4C59-AF96-2DA44BCDB456}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komodo_outing", "Komodo_outing\Komodo_outing.csproj", "{0B36E2F9-F642-425F-8FF2-C247338EDCC7}"
 EndProject

@@ -4,7 +4,7 @@ using System;
 namespace CLaim_Test
 {
     [TestClass]
-    public class Claims_test
+    public class Komodo_Claims_test
     {
         [TestMethod]
         public void TestMethod1()

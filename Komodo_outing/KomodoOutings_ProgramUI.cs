@@ -100,6 +100,8 @@ namespace Komodo_outing
 
             Console.Clear();
 
+
+
         }
     }
 }
