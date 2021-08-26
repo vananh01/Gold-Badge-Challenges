@@ -92,7 +92,7 @@ namespace Komodo_Claims
             else
             {
                 Console.WriteLine("Press any key to continue");
-                Console.ReadLine();
+                Console.ReadKey();
                 Menu();
             }
 
@@ -104,10 +104,51 @@ namespace Komodo_Claims
         {
             Console.Clear();
             Console.WriteLine("Enter the claim id: ");
-            string idinput = Console.ReadLine();
-            int claimId = Int32.Parse(idinput);
+            int claimId = Convert.ToInt32(Console.ReadLine());
 
-           
+
+            Console.WriteLine("Enter the claim type: ");
+            string claimType = Console.ReadLine();
+
+            Console.WriteLine("Enter a claim description: ");
+            string description = Console.ReadLine();
+
+            Console.WriteLine("Amount of Damage: ");
+            double claimAmount = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Date Of Accident: ");
+            DateTime dateOfIncident = Convert.ToDateTime(Console.ReadLine());
+
+            Console.WriteLine("Date of Claim: ");
+            DateTime dateOfClaim = Convert.ToDateTime(Console.ReadLine());
+            try
+            {
+                ClaimTypes claim = ClaimTypes.Thef;
+                if (claimType == "Thef" || claimType == "thef")
+                {
+                    claim = ClaimTypes.Thef;
+                }
+                else if (claimType == "Home" || claimType == "home")
+                {
+                    claim = ClaimTypes.Home;
+                }
+                else if (claimType == "Car" || claimType == "car")
+                {
+                    claim = ClaimTypes.Car;
+                }
+                Claims claims = new Claims(claimId, claimType, description, claimAmount, dateOfIncident, dateOfClaim);
+               // try to figure out how to add new claim
+            }
+            catch
+            {
+                Console.WriteLine("Invalid input");
+            }
+
+            Console.WriteLine("Press any key to continue");
+            Console.ReadKey();
+            Menu();
+
+
         }
 
 
