@@ -1,0 +1,2 @@
+C:\Users\vohoa\source\repos\Gold Badge Console Application Challenges\Cafe\obj\Debug\Cafe.csproj.AssemblyReference.cache
+C:\Users\vohoa\source\repos\Gold Badge Console Application Challenges\Cafe\obj\Debug\Cafe.csproj.CoreCompileInputs.cache

@@ -11,7 +11,7 @@ namespace Cafe
         private MenuRepository _repo = new MenuRepository();
         public void Run()
         {
-            ItemContent();
+            // ItemContent();
             while (Choose())
             {
                 Console.WriteLine("Press any key to continue...");
@@ -56,19 +56,25 @@ namespace Cafe
         private void CreateMenuItem()
         {
             Console.Clear();
-            Menu newMenuItem = new Menu();
+
             Console.WriteLine("Meal Number: ");
-            var mealNumber = Console.ReadLine();
+            string mealNumber = Console.ReadLine();
 
             Console.WriteLine("Meal Name: ");
             string mealName = Console.ReadLine();
 
+            Console.WriteLine("Description: ");
+            string description = Console.ReadLine();
+
             Console.WriteLine("Ingredients: ");
-            string mealDescription = Console.ReadLine();
+            string ingredients = Console.ReadLine();
 
             Console.WriteLine("Price: ");
-            var price = Console.ReadLine();
+            string price = Console.ReadLine();
 
+            Menu newMenuItem = new Menu(Convert.ToInt32(mealNumber), mealName, description, ingredients, Convert.ToDouble(price));
+            _repo.AddMenuItem(newMenuItem);
+            Choose();
         }
         
         
@@ -101,11 +107,12 @@ namespace Cafe
 
         }
 
-        public void ItemContent()
+        /*public void ItemContent()
         {
             _repo.AddMenuItem(new Menu(1, "Pizza", "Best Pizza Ever", "Flour, pepperoni, cheese", 10.99d));
             _repo.AddMenuItem(new Menu(2, "Hamburger", "You should eat more hamburger", "ground beef, buns, cheese", 5.99d));
             _repo.AddMenuItem(new Menu(3, "Coffee", "Best coffee in Indiana", "coffee from Vietnam", 3.99d));
         }
+        */
     }
 }

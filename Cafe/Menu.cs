@@ -16,9 +16,9 @@ namespace Cafe
 
 
         public Menu() { }
-        public Menu (int MealNumber, string MealName, string Description, string Ingredients, double Price)
+        public Menu (int mealNumber, string mealName, string description, string ingredients, double price)
         {
-            MealName = mealNumber;
+            MealNumber = mealNumber;
             MealName = mealName;
             Description = description;
             Ingredients = ingredients;
